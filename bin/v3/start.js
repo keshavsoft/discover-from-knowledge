@@ -19,7 +19,8 @@ const startFunc = (inTargetPath) => {
             fileType: key,
             targetPath: inTargetPath,
             discoveredFiles: files,
-            matchedFile: key ? fileNamesJson[key]?.fileName : undefined
+            matchedFile: key ? fileNamesJson[key]?.fileName : undefined,
+            storyFromFile: key ? fileNamesJson[key] : undefined
         }
     };
 };
